@@ -23,43 +23,21 @@ EMI Calculator
 
 c) System Architecture : 
 
-   --                     _______________
-                          │    Start    │
-                          └──────┬──────┘
-                                 │
-                          ┌──────▼──────┐
-                          │  Home Page  │
-                          └─┬────┬────┬─┘
-                            │    │    │
-            ┌───────────────┘    │    └───────────────┐
-            │                    │                    │
-   ┌────────▼───────┐    ┌───────▼───────┐    ┌───────▼───────┐
-   │ Browse Vehicle │    │ Find Showroom │    │ Sell Old Bike │
-   └───────┬────────┘    └───────┬───────┘    └───────┬───────┘
-           │                    │                    │
-   ┌───────▼────────┐   ┌───────▼───────┐    ┌───────▼──────────┐
-   │ View Specs &    │   │ Book Test Ride│    │ AI Price &       │
-   │ Compare Models  │   └───────┬───────┘    │ Condition Rating │
-   └───────┬────────┘           │             └───────┬──────────┘
-           │                    │                     │
-   ┌───────▼──────────┐         │             ┌───────▼────────────┐
-   │ EMI & Fuel Cost  │         │             │ Post Listing /      │
-   │ Calculator       │         │             │ Connect Buyer       │
-   └───────┬──────────┘         │             └───────┬────────────┘
-           │                    │                     │
-   ┌───────▼──────────┐         │                     │
-   │ Book Vehicle     │         │                     │
-   │ Online           │         │                     │
-   └───────┬──────────┘         │                     │
-           │                    │                     │
-           └───────────┬────────┴──────────┬──────────┘
-                       │                   │
-                 ┌─────▼─────┐       ┌─────▼─────┐
-                 │  Account  │       │   End     │
-                 │(Login/Saved)      │(Booking / │
-                 │Vehicles/History)  │Listing /  │
-                 └───────────┘       │Test Ride) │
-                                     └───────────┘
+   Start
+  │
+  ▼
+Home Page
+  │
+  ├── Browse Vehicles → View Specs → EMI & Fuel Cost → Book Vehicle
+  │
+  ├── Find Showroom → Book Test Ride
+  │
+  ├── Sell Old Bike → AI Price & Condition → Post Listing
+  │
+  └── User Account (Login / Saved / History)
+  │
+  ▼
+End (Booking / Listing / Test Ride Done)
 
 d) Technology Stack :
 
